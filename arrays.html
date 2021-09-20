@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Array in javascript</h1>
+    <script>
+        /* simple array  declear*/
+        var marks= ["10 ", "20", "95","65"];
+        document.write(marks);
+        document.write("<br>")
+        document.write("<br>")
+/* array concatinaion*/
+
+        document.write("Array concatination");
+        document.write("concat(");
+        document.write("<br>");
+        let arr=["ram" , "sham" , "sanju" , "aditi"];
+        let arr1=["shivanshu" , "ajeet" , "sanjeev" , "lokeh"];
+        document.write(arr.concat(arr1));
+        document.write("<br>");
+        document.write("<br>");
+        /*copyWithIn*/
+        document.write("CopyWithin()");
+        document.write("<br>");
+        var marks = ['69','89' , '95' ,'45','34' , '76' ,'56','100'];
+        document.write(marks.copyWithin(2,4,7));
+        document.write("<br>");
+        document.write("<br>");
+          /*entries*/
+            document.write("entries()")
+            document.write("<br>")
+          arr2 = [1,2,3,4,5,6]
+      var result=  arr2.entries();
+      for(let value of result)
+        {
+            document.write("<br>")
+            document.write(value)
+        }
+        document.write("<br>");
+        document.write("<br>");
+         /*every*/
+         document.write("every()")
+            document.write("<br>")
+            let age =  [ 33,17 , 23, 56]
+            let approve = age.every(ispass);
+            function ispass(candidate)
+            {
+                return candidate>18;
+               }
+    document.write(approve);
+    document.write("<br>");
+    document.write("<br>");
+       /*fill()*/
+       document.write("fill()")
+            document.write("<br>")
+             age1 =  [ 33,17 , 23, 56,52]
+            age1.fill(100)
+            document.write(age1);
+            document.write("<br>")
+            document.write("<br>")
+                /*filter*/
+         document.write("filter()")
+            document.write("<br>")
+            const age2 =  [ 33,19 , 23, 56]
+            const approve2 = age.filter(ispass);
+            function ispass(candidate)
+            {
+                return candidate>18;
+               }
+    document.write(approve2);
+    document.write("<br>");
+    document.write("<br>");
+    /*find*/
+         document.write("find()")
+            document.write("<br>")
+            const age3 =  [ 33,19 , 23, 56]
+            const approve3 = age.find(ispass);
+            function ispass(candidate)
+            {
+                return candidate>18;
+               }
+    document.write(approve3);
+    document.write("<br>");
+    document.write("<br>");
+    </script>
+</body>
+</html>
