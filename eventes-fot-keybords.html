@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="black">
+        <h1> Welcome to my page . keep learning</h1>
+        <button onkeydown="black()"> onkeydown       
+        </button>
+        </div>
+    <div id="pink">
+        <h1> Welcome to my page . keep learning</h1>
+        <button onkeypress="pink()"> onkeypress    
+        </button>
+        </div>
+    <div id="purpul">
+        <h1> Welcome to my page . keep learning</h1>
+        <button onkeyup="purpul()"> onkeyup       
+        </button>
+        </div>
+        <script>
+             /*onclick*/
+        function pink() {
+            document.getElementById("pink").style.backgroundColor="yellow";
+            document.getElementById("pink").style.fontWeight="bolder";
+        }
+        /*onmouseover*/
+        function black() {
+            document.getElementById("black").style.backgroundColor="black";
+            document.getElementById("black").style.color="white";
+        }
+        function purpul() {
+            document.getElementById("purpul").style.backgroundColor="pink";
+            document.getElementById("purpul").style.color="black";
+        }
+        </script>
+</body>
+</html>

@@ -28,7 +28,7 @@
         document.write("CopyWithin()");
         document.write("<br>");
         var marks = ['69','89' , '95' ,'45','34' , '76' ,'56','100'];
-        document.write(marks.copyWithin(2,4,7));
+        document.write(marks.copyWithin(1,4,8));
         document.write("<br>");
         document.write("<br>");
           /*entries*/
@@ -46,7 +46,7 @@
          /*every*/
          document.write("every()")
             document.write("<br>")
-            let age =  [ 33,17 , 23, 56]
+            let age =  [ 33,17  , 23, 56]
             let approve = age.every(ispass);
             function ispass(candidate)
             {
@@ -66,8 +66,8 @@
                 /*filter*/
          document.write("filter()")
             document.write("<br>")
-            const age2 =  [ 33,19 , 23, 56]
-            const approve2 = age.filter(ispass);
+            const age2 =  [ 33,9 , 23, 56]
+            const approve2 = age2.filter(ispass);
             function ispass(candidate)
             {
                 return candidate>18;
@@ -78,8 +78,8 @@
     /*find*/
          document.write("find()")
             document.write("<br>")
-            const age3 =  [ 33,19 , 23, 56]
-            const approve3 = age.find(ispass);
+            const age3 =  [ 19 , 23, 56];
+            const approve3 = age3.find(ispass);
             function ispass(candidate)
             {
                 return candidate>18;
@@ -87,6 +87,33 @@
     document.write(approve3);
     document.write("<br>");
     document.write("<br>");
+        /*findIndex*/
+        document.write("findIndex()")
+            document.write("<br>")
+            var age4 =  [ 3,15 , 23, 56]
+            const approve4 = age4.findIndex(ispass);
+            function ispass(candidate)
+            {
+                return candidate>18;
+               }
+    document.write(approve4);
+    document.write("<br>");
+    document.write("<br>");
+      /*forEach*/
+      document.write("forEach()")
+            document.write("<br>")
+            var a = ["sanjeev","sanju", "ishu "];
+             var b = a.forEach(loop , "<br>")
+             function loop(value , index){
+                 document.write(index+ ":&nbsp" +value + "<br>&nbsp;")      
+             };
+             /*from*/
+             document.write("from()")
+            document.write("<br>")
+            var alphabet = [abcdef];
+            var alphabet1 = Array.from(alphabet);
+            document.write(alphabet1);
+
     </script>
 </body>
 </html>

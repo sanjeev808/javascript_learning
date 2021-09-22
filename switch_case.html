@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch_case</title>
+</head>
+<body>
+    <script>
+         let day= new Date();
+current = day.getDay();
+
+switch (current) {
+  case 0:
+    current = "Sunday";
+    break;
+  case 1:
+    current = "Monday";
+    break;
+  case 2:
+    current = "Tuesday";
+    break;
+  case 3:
+    current = "Wednesday";
+    break;
+  case 4:
+    current = "Thursday";
+    break;
+  case 5:
+    current = "Friday";
+    break;
+  case 6:
+    current = "Saturday";
+}
+document.write(" today is " + current)
+    </script>
+</body>
+</html>
