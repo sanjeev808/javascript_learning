@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>switch_case</title>
-</head>
-<body>
-    <script>
-         let day= new Date();
+let day= new Date();
 current = day.getDay();
 
 switch (current) {
@@ -34,6 +24,3 @@ switch (current) {
     current = "Saturday";
 }
 document.write(" today is " + current)
-    </script>
-</body>
-</html>
