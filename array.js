@@ -100,7 +100,7 @@ document.write("forEach()")
      /*from*/
      document.write("from()")
     document.write("<br>")
-    var alphabet = [abcdef];
+    var alphabet = ['abcdef'];
     var alphabet1 = Array.from(alphabet);
     document.write(alphabet1);
 
